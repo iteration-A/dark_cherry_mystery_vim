@@ -74,3 +74,6 @@ hi StatusLineNC gui=NONE guibg=#191716 guifg=#ececec
 hi Search guibg=#665e58 guifg=#ececec
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
+
+" bufferline backgroung
+hi BufferlineFill guibg=#191716
