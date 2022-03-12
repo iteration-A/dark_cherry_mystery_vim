@@ -77,4 +77,4 @@ hi Visual gui=NONE guibg=#454545
 
 " bufferline backgroung
 autocmd! BufEnter * hi BufferlineFill guibg=#191716
-autocmd! FileType dashboard * hi BufferlineFill guibg=#191716
+autocmd! FileType dashboard hi BufferlineFill guibg=#191716
