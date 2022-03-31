@@ -99,4 +99,5 @@ function! Solid()
   augroup END
 endfunction
 
-call Solid()
+" call Solid()
+call Transparent()
