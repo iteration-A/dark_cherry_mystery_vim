@@ -88,7 +88,7 @@ endfunction
 
 function! Solid()
 	hi Normal guibg=#191716
-	hi NonText guibg=#191716
+	hi NonText guibg=#191716 guifg=#191716
 	hi BufferlineFill guibg=#191716
 " bufferline backgroung
   augroup DarkCherryVim
