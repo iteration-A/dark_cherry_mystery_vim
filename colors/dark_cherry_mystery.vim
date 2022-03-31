@@ -75,11 +75,28 @@ hi Search guibg=#665e58 guifg=#ececec
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
 
-" bufferline backgroung
-augroup DarkCherryVim
-  autocmd!
-  autocmd! BufEnter * hi BufferlineFill guibg=#191716
-  autocmd! FileType * hi BufferlineFill guibg=#191716
-  autocmd! VimEnter * hi BufferlineFill guibg=#191716
-augroup END
 hi NonText guifg=bg
+
+function! Transparent()
+	hi Normal guibg=NONE
+	hi NonText guibg=NONE guifg=BLACK
+	hi BufferlineFill guibg=NONE
+	augroup DarkCherryVim
+		autocmd!
+	augroup END
+endfunction
+
+function! Solid()
+	hi Normal guibg=#191716
+	hi NonText guibg=#191716
+	hi BufferlineFill guibg=#191716
+" bufferline backgroung
+  augroup DarkCherryVim
+    autocmd!
+    autocmd! BufEnter * hi BufferlineFill guibg=#191716
+    autocmd! FileType * hi BufferlineFill guibg=#191716
+    autocmd! VimEnter * hi BufferlineFill guibg=#191716
+  augroup END
+endfunction
+
+call Solid()
