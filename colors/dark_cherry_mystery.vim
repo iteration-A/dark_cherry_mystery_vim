@@ -92,7 +92,7 @@ function! Solid()
 	hi NonText guibg=#191716 guifg=#191716
 	hi BufferlineFill guibg=#191716
 	hi LineNr guibg=#191716
-" bufferline backgroung
+  " bufferline backgroung
   augroup DarkCherryVim
     autocmd!
     autocmd! BufEnter * hi BufferlineFill guibg=#191716
