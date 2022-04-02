@@ -81,6 +81,7 @@ function! Transparent()
 	hi Normal guibg=NONE
 	hi NonText guibg=NONE guifg=BLACK
 	hi BufferlineFill guibg=NONE
+	hi LineNr guibg=NONE
 	augroup DarkCherryVim
 		autocmd!
 	augroup END
@@ -90,6 +91,7 @@ function! Solid()
 	hi Normal guibg=#191716
 	hi NonText guibg=#191716 guifg=#191716
 	hi BufferlineFill guibg=#191716
+	hi LineNr guibg=#191716
 " bufferline backgroung
   augroup DarkCherryVim
     autocmd!
